@@ -1,0 +1,50 @@
+{% import "_includes/forms" as forms %}
+
+{{ forms.lightswitchField({
+    label: settings.getAttributeLabel('override'),
+    name: 'override',
+    on: settings.override,
+    instructions: 'Override the default Commerce Order page.',
+    errors: settings.getErrors('override')
+}) }}
+
+{{ forms.selectField({
+    label: settings.getAttributeLabel('status_processing'),
+    instructions: "Set this status automatically when an order is under processing.",
+    name: 'status_processing',
+    value: settings.status_processing,
+    options: settings.getStatusOptions(),
+    errors: settings.getErrors('status_processing'),
+    required: true,
+}) }}
+
+{{ forms.selectField({
+    label: settings.getAttributeLabel('status_complete'),
+    instructions: "Set this status automatically when an order is completed.",
+    name: 'status_complete',
+    value: settings.status_complete,
+    options: settings.getStatusOptions(),
+    errors: settings.getErrors('status_complete'),
+    required: true,
+}) }}
+
+{{ forms.selectField({
+    label: settings.getAttributeLabel('status_cancelled'),
+    instructions: "Set this status automatically when an order is cancelled.",
+    name: 'status_cancelled',
+    value: settings.status_cancelled,
+    options: settings.getStatusOptions(),
+    errors: settings.getErrors('status_cancelled'),
+    required: true,
+}) }}
+
+{{ forms.selectField({
+    label: settings.getAttributeLabel('status_refunded'),
+    instructions: "Set this status automatically when an order is refunded.",
+    name: 'status_refunded',
+    value: settings.status_refunded,
+    options: settings.getStatusOptions(),
+    errors: settings.getErrors('status_refunded'),
+    required: true,
+}) }}
+

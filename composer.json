@@ -1,0 +1,40 @@
+{
+  "name": "elleracompany/commerce-quick-order-actions",
+  "description": "Order Action Shortcut Plugin for Craft Commerce",
+  "version": "1.0.0",
+  "type": "craft-plugin",
+  "keywords": [
+    "management",
+    "commerce",
+    "craftcms",
+    "orders",
+    "yii2"
+  ],
+  "license": "Craft",
+  "authors": [
+    {
+      "name": "Ellera AS",
+      "homepage": "https://ellera.no/"
+    }
+  ],
+  "support": {
+    "email": "support@ellera.no",
+    "issues": "https://github.com/elleracompany/commerce-quick-order-actions/issues?state=open",
+    "source": "https://github.com/elleracompany/commerce-quick-order-actions",
+    "docs": "https://github.com/elleracompany/commerce-quick-order-actions",
+    "rss": "https://github.com/elleracompany/commerce-quick-order-actions/commits/master.atom"
+  },
+  "require": {
+    "craftcms/cms": "^3.0.0",
+    "craftcms/commerce": "^2.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ellera\\commerce\\orders\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "Quick Order Actions",
+    "handle": "quick-order-actions"
+  }
+}
