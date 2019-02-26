@@ -1,6 +1,16 @@
-# Release Notes for PayPal for Craft Commerce
+# Release Notes for Quick Order Actions for Craft Commerce
 
-## 0.0.1 - 2018-12-18
+## 1.0.2 - 2019-02-26
 
 ### Changed
-- Project Created
+- Updated release notes
+
+## 1.0.1 - 2019-02-26
+
+### Changed
+- Updated License
+
+## 1.0.0 - 2019-02-26
+
+### Changed
+- Project Released
