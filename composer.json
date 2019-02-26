@@ -1,7 +1,7 @@
 {
   "name": "elleracompany/commerce-quick-order-actions",
   "description": "Order Action Shortcut Plugin for Craft Commerce",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "type": "craft-plugin",
   "keywords": [
     "management",
