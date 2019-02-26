@@ -10,7 +10,7 @@
     "orders",
     "yii2"
   ],
-  "license": "Craft",
+  "license": "MIT",
   "authors": [
     {
       "name": "Ellera AS",
