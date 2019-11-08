@@ -1,5 +1,10 @@
 # Release Notes for Quick Order Actions for Craft Commerce
 
+## 1.1.0 - 2019-10-08
+
+### Updated
+- Made compatible with Craft Commerce 2.2 - #1
+
 ## 1.0.4 - 2019-02-26
 
 ### Changed
