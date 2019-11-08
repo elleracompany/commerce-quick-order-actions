@@ -18,14 +18,15 @@ use craft\commerce\elements\Order;
  */
 class OrdersController extends \craft\commerce\controllers\OrdersController
 {
-	/**
-	 * Index of Orders
-	 * Overwriting commerce/controllers/OrderController::actionOrderIndex()
-	 *
-	 * @return Response
-	 * @throws \Throwable
-	 */
-	public function actionOrderIndex(): Response
+    /**
+     * Index of Orders
+     * Overwriting commerce/controllers/OrderController::actionOrderIndex()
+     *
+     * @param string $orderStatusHandle
+     * @return Response
+     * @throws \Throwable
+     */
+	public function actionOrderIndex(string $orderStatusHandle = ''): Response
 	{
 		// Remove all incomplete carts older than a certain date in config.
 		Plugin::getInstance()->getCarts()->purgeIncompleteCarts();
